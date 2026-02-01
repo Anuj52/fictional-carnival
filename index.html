@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A special question just for you">
+    <title>I Have Something to Ask You 💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <!-- Main Question Page -->
+    <div class="container" id="questionPage">
+        <div class="card">
+            <div class="sparkle sparkle-1">✨</div>
+            <div class="sparkle sparkle-2">✨</div>
+            <div class="sparkle sparkle-3">💫</div>
+
+            <div class="header">
+                <span class="heart-icon">💕</span>
+                <h1>I have a very important question for you...</h1>
+            </div>
+
+            <div class="question">
+                <h2>Will you go on a date with me tonight?</h2>
+                <p class="subtitle">Please choose wisely 😊</p>
+            </div>
+
+            <!-- Photo Gallery -->
+            <div class="gallery">
+                <div class="gallery-placeholder">
+                    <span class="gallery-icon">📸</span>
+                    <p>Our Beautiful Moments</p>
+                </div>
+            </div>
+
+            <div class="buttons-container">
+                <button class="btn btn-yes" id="yesBtn">
+                    <span class="btn-icon">💖</span>
+                    Yes!
+                </button>
+                <button class="btn btn-no" id="noBtn">
+                    <span class="btn-icon">😢</span>
+                    No
+                </button>
+            </div>
+
+            <p class="hint" id="hint">Psst... the right answer is pretty obvious 😉</p>
+        </div>
+    </div>
+
+    <!-- Success Page -->
+    <div class="container hidden" id="successPage">
+        <div class="success-card">
+            <div class="confetti-container" id="confettiContainer"></div>
+
+            <div class="success-content">
+                <div class="success-icon">🎉💕🎉</div>
+                <h1 class="success-title">I Knew You'd Say Yes!</h1>
+                <p class="success-message">You just made me the happiest person in the world!</p>
+
+                <div class="date-details">
+                    <div class="detail-card">
+                        <span class="detail-icon">�</span>
+                        <h3>Meet Link</h3>
+                        <a href="https://meet.google.com/ktd-rwpa-vai" target="_blank" id="locationText"
+                            class="meet-link">Join Google Meet</a>
+                    </div>
+                    <div class="detail-card">
+                        <span class="detail-icon">🕖</span>
+                        <h3>Time</h3>
+                        <p id="timeText">7:00 PM Tonight</p>
+                    </div>
+                </div>
+
+                <div class="final-note">
+                    <p>💝 Check the front door... 💝</p>
+                </div>
+
+                <div class="floating-hearts">
+                    <span>❤️</span>
+                    <span>💕</span>
+                    <span>💖</span>
+                    <span>💗</span>
+                    <span>💓</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

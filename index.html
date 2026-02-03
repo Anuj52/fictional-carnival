@@ -4,95 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A special question just for you">
-    <title>I Have Something to Ask You 💕</title>
+    <meta name="description" content="A special question just for you 💕">
+    <title>For Someone Special 💕</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@400;500;600;700&family=Pacifico&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Floating Hearts Background -->
-    <div class="hearts-container" id="heartsContainer"></div>
+    <!-- 3D Floating Hearts Background -->
+    <div class="hearts-bg" id="heartsBg"></div>
 
-    <!-- Main Question Page -->
+    <!-- Question Page -->
     <div class="container" id="questionPage">
         <div class="card">
+            <!-- Sparkle decorations -->
             <div class="sparkle sparkle-1">✨</div>
-            <div class="sparkle sparkle-2">✨</div>
-            <div class="sparkle sparkle-3">💫</div>
+            <div class="sparkle sparkle-2">💫</div>
+            <div class="sparkle sparkle-3">⭐</div>
+            <div class="sparkle sparkle-4">🌟</div>
 
             <div class="header">
-                <span class="heart-icon">💕</span>
-                <h1>I have a very important question for you...</h1>
+                <span class="heart-icon">💝</span>
+                <h1 id="mainTitle">Hey beautiful...</h1>
+                <p class="typewriter" id="typewriter"></p>
             </div>
 
             <div class="question">
                 <h2>Will you go on a date with me tonight?</h2>
-                <p class="subtitle">Please choose wisely 😊</p>
+                <p class="subtitle">I promise to make you smile �</p>
             </div>
 
-            <!-- Photo Gallery -->
-            <div class="gallery">
-                <div class="gallery-placeholder">
-                    <span class="gallery-icon">📸</span>
-                    <p>Our Beautiful Moments</p>
-                </div>
+            <div class="game-instruction">
+                <p id="instruction">💕 Choose your answer...</p>
             </div>
 
-            <div class="buttons-container">
+            <div class="buttons-container" id="buttonsContainer">
                 <button class="btn btn-yes" id="yesBtn">
                     <span class="btn-icon">💖</span>
-                    Yes!
+                    <span class="btn-text">Yes!</span>
+                    <span class="btn-hearts">💕</span>
                 </button>
                 <button class="btn btn-no" id="noBtn">
-                    <span class="btn-icon">😢</span>
-                    No
+                    Nope
                 </button>
             </div>
 
-            <p class="hint" id="hint">Psst... the right answer is pretty obvious 😉</p>
+            <p class="hint" id="hint"></p>
+
+            <div class="catch-counter">
+                <span class="counter-label">Times you tried to escape:</span>
+                <span id="attemptCount">0</span>
+            </div>
         </div>
     </div>
 
     <!-- Success Page -->
     <div class="container hidden" id="successPage">
         <div class="success-card">
-            <div class="confetti-container" id="confettiContainer"></div>
+            <div class="success-icon">💖</div>
+            <h1 class="success-title">Yay! You said Yes!</h1>
+            <p class="success-message">
+                I knew you would 💕<br>
+                <span class="sweet-note">You just made me the happiest person!</span>
+            </p>
 
-            <div class="success-content">
-                <div class="success-icon">🎉💕🎉</div>
-                <h1 class="success-title">I Knew You'd Say Yes!</h1>
-                <p class="success-message">You just made me the happiest person in the world!</p>
+            <div class="love-message">
+                <p>"Every moment with you is special"</p>
+            </div>
 
-                <div class="date-details">
-                    <div class="detail-card">
-                        <span class="detail-icon">�</span>
-                        <h3>Meet Link</h3>
-                        <a href="https://meet.google.com/ktd-rwpa-vai" target="_blank" id="locationText"
-                            class="meet-link">Join Google Meet</a>
-                    </div>
-                    <div class="detail-card">
-                        <span class="detail-icon">🕖</span>
-                        <h3>Time</h3>
-                        <p id="timeText">7:00 PM Tonight</p>
-                    </div>
+            <div class="date-details">
+                <div class="detail-card">
+                    <span class="detail-icon">💻</span>
+                    <h3>Our Date Spot</h3>
+                    <a href="https://meet.google.com/ktd-rwpa-vai" target="_blank" class="meet-link">
+                        <span>Join me here</span>
+                        <span class="link-arrow">→</span>
+                    </a>
                 </div>
-
-                <div class="final-note">
-                    <p>💝 Check the front door... 💝</p>
+                <div class="detail-card">
+                    <span class="detail-icon">🕖</span>
+                    <h3>Be Ready By</h3>
+                    <p id="timeText">7:00 PM</p>
+                    <span class="time-note">Don't be late! 😉</span>
                 </div>
+            </div>
 
-                <div class="floating-hearts">
-                    <span>❤️</span>
-                    <span>💕</span>
-                    <span>💖</span>
-                    <span>💗</span>
-                    <span>💓</span>
-                </div>
+            <div class="final-note">
+                <p>✨ Can't wait to see your smile ✨</p>
+            </div>
+
+            <div class="floating-hearts">
+                <span>💕</span>
+                <span>💖</span>
+                <span>💗</span>
+                <span>💓</span>
+                <span>💝</span>
+            </div>
+
+            <div class="xoxo">
+                <span>XOXO</span>
             </div>
         </div>
     </div>
